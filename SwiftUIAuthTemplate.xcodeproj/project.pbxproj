@@ -11,6 +11,12 @@
 		8505169C28C494120034D904 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8505169B28C494120034D904 /* ContentView.swift */; };
 		8505169E28C494140034D904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8505169D28C494140034D904 /* Assets.xcassets */; };
 		850516A128C494150034D904 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850516A028C494150034D904 /* Preview Assets.xcassets */; };
+		850516A928C4F13F0034D904 /* TemplateOneSignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850516A828C4F13F0034D904 /* TemplateOneSignInScreen.swift */; };
+		859CB92928CB5642008AF544 /* TemplateOneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859CB92828CB5642008AF544 /* TemplateOneTextField.swift */; };
+		859CB92B28CB6064008AF544 /* TemplateOneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859CB92A28CB6064008AF544 /* TemplateOneButton.swift */; };
+		859CB92E28CB610A008AF544 /* AuthTemp+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859CB92D28CB610A008AF544 /* AuthTemp+Modifier.swift */; };
+		859CB93028CB621E008AF544 /* TemplateOneSocialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859CB92F28CB621E008AF544 /* TemplateOneSocialButton.swift */; };
+		859CB93228CB6EC9008AF544 /* TemplateOneSignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859CB93128CB6EC9008AF544 /* TemplateOneSignUpScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		8505169B28C494120034D904 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8505169D28C494140034D904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		850516A028C494150034D904 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		850516A828C4F13F0034D904 /* TemplateOneSignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateOneSignInScreen.swift; sourceTree = "<group>"; };
+		859CB92828CB5642008AF544 /* TemplateOneTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateOneTextField.swift; sourceTree = "<group>"; };
+		859CB92A28CB6064008AF544 /* TemplateOneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateOneButton.swift; sourceTree = "<group>"; };
+		859CB92D28CB610A008AF544 /* AuthTemp+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthTemp+Modifier.swift"; sourceTree = "<group>"; };
+		859CB92F28CB621E008AF544 /* TemplateOneSocialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateOneSocialButton.swift; sourceTree = "<group>"; };
+		859CB93128CB6EC9008AF544 /* TemplateOneSignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateOneSignUpScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,9 @@
 		8505169828C494120034D904 /* SwiftUIAuthTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				859CB92C28CB60DC008AF544 /* Extenstions */,
+				859CB92728CB55FD008AF544 /* Components */,
+				850516A728C4ED130034D904 /* Screens */,
 				8505169928C494120034D904 /* SwiftUIAuthTemplateApp.swift */,
 				8505169B28C494120034D904 /* ContentView.swift */,
 				8505169D28C494140034D904 /* Assets.xcassets */,
@@ -65,6 +80,41 @@
 				850516A028C494150034D904 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		850516A728C4ED130034D904 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				859CB93328CB7689008AF544 /* TemplateOne */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		859CB92728CB55FD008AF544 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				859CB92828CB5642008AF544 /* TemplateOneTextField.swift */,
+				859CB92A28CB6064008AF544 /* TemplateOneButton.swift */,
+				859CB92F28CB621E008AF544 /* TemplateOneSocialButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		859CB92C28CB60DC008AF544 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				859CB92D28CB610A008AF544 /* AuthTemp+Modifier.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		859CB93328CB7689008AF544 /* TemplateOne */ = {
+			isa = PBXGroup;
+			children = (
+				859CB93128CB6EC9008AF544 /* TemplateOneSignUpScreen.swift */,
+				850516A828C4F13F0034D904 /* TemplateOneSignInScreen.swift */,
+			);
+			path = TemplateOne;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				850516A928C4F13F0034D904 /* TemplateOneSignInScreen.swift in Sources */,
+				859CB92E28CB610A008AF544 /* AuthTemp+Modifier.swift in Sources */,
+				859CB92928CB5642008AF544 /* TemplateOneTextField.swift in Sources */,
+				859CB92B28CB6064008AF544 /* TemplateOneButton.swift in Sources */,
+				859CB93228CB6EC9008AF544 /* TemplateOneSignUpScreen.swift in Sources */,
 				8505169C28C494120034D904 /* ContentView.swift in Sources */,
+				859CB93028CB621E008AF544 /* TemplateOneSocialButton.swift in Sources */,
 				8505169A28C494120034D904 /* SwiftUIAuthTemplateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
