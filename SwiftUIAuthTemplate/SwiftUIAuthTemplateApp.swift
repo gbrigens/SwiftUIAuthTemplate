@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIAuthTemplateApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TemplateOneSignUpScreen()
         }
     }
 }
